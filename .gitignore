@@ -105,3 +105,13 @@ dist
 
 # IDEA Ultimate Config
 .idea
+
+# DOC Files
+/doc
+
+# Cache, dist
+/.cache
+/dist
+
+# Yarn lock
+yarn.lock
