@@ -1,3 +1,6 @@
 {
-  "includePaths": ["node_modules"]
+  "includePaths": ["node_modules"],
+  "plugins": {
+      "autoprefixer": true
+    }
 }
