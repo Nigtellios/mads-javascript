@@ -1,13 +1,18 @@
 // Import all BS plugins
 import * as bootstrap from 'bootstrap';
 
-console.log("Main.JS has been loaded!");
+// Load Navigation
+window.addEventListener('DOMContentLoaded', (event) => {
+    import('./fragments/navigation').then(function(page){
+        page.render(document.querySelector(".main__header"));
+    });
+});
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector("#bt").addEventListener('click', function(evt){
         console.log("Button Clicked!")
-        import('/pages/maths').then(function(page){
+        import('./fragments/maths').then(function(page){
             page.render(document.querySelector(".holder"))
-        })
-    })
-}
+        });
+    });
+})
